@@ -1,128 +1,94 @@
+import { Gem, Truck, Factory, Users } from "lucide-react";
+
 export default function ChoiceSection() {
+  const features = [
+    {
+      title: "Material Berkualitas Tinggi",
+      desc: "Kami menyediakan batu pilihan dengan standar kualitas terbaik untuk memastikan kekuatan dan ketahanan proyek Anda.",
+      icon: Gem,
+    },
+    {
+      title: "Pengiriman Tepat Waktu",
+      desc: "Distribusi material yang cepat dan terjadwal untuk menjaga kelancaran proyek tanpa hambatan.",
+      icon: Truck,
+    },
+    {
+      title: "Kapasitas Produksi Besar",
+      desc: "Mampu memenuhi kebutuhan proyek skala kecil hingga besar dengan pasokan yang stabil.",
+      icon: Factory,
+    },
+    {
+      title: "Tim Profesional & Berpengalaman",
+      desc: "Didukung oleh tenaga ahli berpengalaman di bidang pertambangan dan konstruksi.",
+      icon: Users,
+    },
+  ];
+
   return (
     <section
       id="best-choices"
-      className="max-w-[1280px] w-full overflow-hidden mx-auto"
+      className="max-w-7xl mx-auto px-5 md:px-10 lg:px-18.75 py-16"
     >
-      <div className="flex flex-col gap-[30px] px-[75px]">
-        <h2 className="font-clash-display font-semibold text-[46px] text-center">
-          Your Best Choice
-        </h2>
-        <div className="grid grid-cols-4 gap-[30px]">
-          <div className="relative flex flex-col gap-[30px] px-5 py-[30px] bg-white hover:bg-[#080c2e] rounded-[16px] group transition-all duration-300">
-            <div className="hidden absolute right-1 -translate-y-4 group-hover:block opacity-80">
-              <img src="/assets/images/icons/ellipse.svg" alt="shadow" />
-            </div>
-            <div className="block w-[46px] h-[46px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-              <img src="/assets/images/icons/hierarchy-square.svg" alt="icon" />
-            </div>
-            <div className="hidden w-[46px] h-[46px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-              <img
-                src="/assets/images/icons/hierarchy-square-white.svg"
-                alt="icon"
-              />
-            </div>
-            <div className="flex flex-col gap-1 z-10">
-              <h3 className="font-bold text-[22px] group-hover:text-white transition-all duration-300">
-                Extra Layers
-              </h3>
-              <p className="font-medium leading-[28px] text-weserve-grey group-hover:text-[#686c83]">
-                Making your project more secure avoiding DDoS
-              </p>
-            </div>
-            <div>
-              <a
-                href="#"
-                className="font-semibold text-weserve-purple group-hover:text-white transition-all duration-300"
+      <div className="flex flex-col gap-10">
+        <div className="text-center max-w-150 mx-auto">
+          <h2 className="text-3xl md:text-4xl lg:text-[46px] font-bold text-gray-900">
+            Kenapa Memilih Kami?
+          </h2>
+          <p className="text-gray-500 mt-3">
+            Solusi material tambang terpercaya untuk mendukung proyek Anda dari
+            awal hingga selesai.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {features.map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <div
+                key={item.title}
+                className="
+                  flex flex-col gap-6 p-6
+                  bg-white rounded-2xl
+                  border border-gray-100
+                  hover:bg-green-900
+                  hover:-translate-y-1 hover:shadow-lg
+                  group transition-all duration-300 cursor-pointer
+                "
               >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="relative flex flex-col gap-[30px] px-5 py-[30px] bg-white hover:bg-[#080c2e] rounded-[16px] group transition-all duration-300">
-            <div className="hidden absolute right-1 -translate-y-4 group-hover:block opacity-80">
-              <img src="/assets/images/icons/ellipse.svg" alt="shadow" />
-            </div>
-            <div className="block w-[46px] h-[46px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-              <img src="/assets/images/icons/3dcube.svg" alt="icon" />
-            </div>
-            <div className="hidden w-[46px] h-[46px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-              <img src="/assets/images/icons/3dcube-white.svg" alt="icon" />
-            </div>
-            <div className="flex flex-col gap-1 z-10">
-              <h3 className="font-bold text-[22px] group-hover:text-white transition-all duration-300">
-                Customizable
-              </h3>
-              <p className="font-medium leading-[28px] text-weserve-grey group-hover:text-[#686c83]">
-                Only install what your business needs to grow
-              </p>
-            </div>
-            <div>
-              <a
-                href="#"
-                className="font-semibold text-weserve-purple group-hover:text-white transition-all duration-300"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="relative flex flex-col gap-[30px] px-5 py-[30px] bg-white hover:bg-[#080c2e] rounded-[16px] group transition-all duration-300">
-            <div className="hidden absolute right-1 -translate-y-4 group-hover:block opacity-80">
-              <img src="/assets/images/icons/ellipse.svg" alt="shadow" />
-            </div>
-            <div className="block w-[46px] h-[46px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-              <img src="/assets/images/icons/status-up-purple.svg" alt="icon" />
-            </div>
-            <div className="hidden w-[46px] h-[46px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-              <img src="/assets/images/icons/status-up.svg" alt="icon" />
-            </div>
-            <div className="flex flex-col gap-1 z-10">
-              <h3 className="font-bold text-[22px] group-hover:text-white transition-all duration-300">
-                AI Automation
-              </h3>
-              <p className="font-medium leading-[28px] text-weserve-grey group-hover:text-[#686c83]">
-                Decide the business flow based on latest reports
-              </p>
-            </div>
-            <div>
-              <a
-                href="#"
-                className="font-semibold text-weserve-purple group-hover:text-white transition-all duration-300"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="relative flex flex-col gap-[30px] px-5 py-[30px] bg-white hover:bg-[#080c2e] rounded-[16px] group transition-all duration-300">
-            <div className="hidden absolute right-1 -translate-y-4 group-hover:block opacity-80">
-              <img src="/assets/images/icons/ellipse.svg" alt="shadow" />
-            </div>
-            <div className="block w-[46px] h-[46px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-              <img src="/assets/images/icons/driver-refresh.svg" alt="icon" />
-            </div>
-            <div className="hidden w-[46px] h-[46px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-              <img
-                src="/assets/images/icons/driver-refresh-white.svg"
-                alt="icon"
-              />
-            </div>
-            <div className="flex flex-col gap-1 z-10">
-              <h3 className="font-bold text-[22px] group-hover:text-white transition-all duration-300">
-                Auto-Scalling
-              </h3>
-              <p className="font-medium leading-[28px] text-weserve-grey group-hover:text-[#686c83]">
-                Have a long weekend without worrying any loss
-              </p>
-            </div>
-            <div>
-              <a
-                href="#"
-                className="font-semibold text-weserve-purple group-hover:text-white transition-all duration-300"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
+                <div
+                  className="
+                  w-12 h-12 flex items-center justify-center
+                  rounded-lg bg-green-100
+                  group-hover:bg-white/10
+                  transition
+                "
+                >
+                  <Icon
+                    size={24}
+                    className="
+                      text-green-700
+                      group-hover:text-white
+                      transition
+                    "
+                  />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-white transition">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 mt-2 group-hover:text-green-100 transition">
+                    {item.desc}
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  className="text-sm font-semibold text-green-700 group-hover:text-white transition"
+                >
+                  Pelajari Lebih Lanjut →
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

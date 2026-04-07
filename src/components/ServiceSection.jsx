@@ -4,7 +4,7 @@ export default function ServiceSection() {
       id="services-provide"
       className="relative z-20 max-w-[1280px] w-full overflow-hidden mx-auto px-[75px] -mb-[250px]"
     >
-      <div className="bg-[#640ef1] rounded-[40px]">
+      <div className="bg-green-700 rounded-[40px]">
         <div className="flex gap-[60px] items-center p-[50px]">
           <div className="flex flex-col gap-[40px] w-[478px]">
             <div className="!w-fit bg-white rounded-full px-4 py-2">

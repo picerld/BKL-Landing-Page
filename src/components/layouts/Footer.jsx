@@ -1,117 +1,79 @@
+import { Mail, Phone, MapPin, Globe } from "lucide-react";
+
 export default function Footer() {
   return (
-    <footer className="relative z-10 w-full overflow-hidden mx-auto bg-[#070C29] -mt-[150px] pt-[150px]">
-      <div className="flex flex-col gap-[50px] px-[75px] pb-[50px] pt-[200px] max-w-[1280px] mx-auto">
-        <div className="flex gap-[100px] items-center">
-          <div className="flex flex-col gap-[30px]">
-            <div className="w-[175px] h-[42px] shrink-0 overflow-hidden">
-              <img
-                src="/assets/images/logos/logo-white.svg"
-                className="w-full h-full object-cover"
-                alt="logo"
-              />
-            </div>
-            <p className="font-medium text-[#686c83] leading-[28px]">
-              We host your empire business today using the latest technologies.
+    <footer className="bg-black text-white">
+      <div className="max-w-7xl mx-auto px-5 md:px-10 lg:px-18.75 py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div className="flex flex-col gap-5">
+            <img
+              src="https://bklquarry.com/wp-content/uploads/2024/03/header.png"
+              className="w-50 object-contain invert brightness-200"
+              alt="logo"
+            />
+
+            <p className="text-gray-400 text-sm leading-relaxed">
+              Penyedia material tambang berkualitas tinggi untuk mendukung
+              proyek konstruksi di seluruh Indonesia.
             </p>
-            <div className="flex gap-[14px] items-center">
-              <a href="#" className="bg-white rounded-full p-[10px]">
-                <img
-                  src="/assets/images/icons/sms.svg"
-                  className="w-[24px] h-[24px]"
-                  alt="icon"
-                />
+
+            <div className="flex gap-3">
+              <a className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition">
+                <Mail size={18} />
               </a>
-              <a href="#" className="bg-white rounded-full p-[10px]">
-                <img
-                  src="/assets/images/icons/global-purple.svg"
-                  className="w-[24px] h-[24px]"
-                  alt="icon"
-                />
+              <a className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition">
+                <Mail size={18} />
               </a>
-              <a href="#" className="bg-white rounded-full p-[10px]">
-                <img
-                  src="/assets/images/icons/call.svg"
-                  className="w-[24px] h-[24px]"
-                  alt="icon"
-                />
-              </a>
-              <a href="#" className="bg-white rounded-full p-[10px]">
-                <img
-                  src="/assets/images/icons/video-play.svg"
-                  className="w-[24px] h-[24px]"
-                  alt="icon"
-                />
+              <a className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition">
+                <Globe size={18} />
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-[70px] content-center justify-end">
-            <div className="flex flex-col gap-[30px]">
-              <h4 className="text-white font-bold text-[18px]">Products</h4>
-              <div className="flex flex-col gap-4">
-                <a href="#" className="text-[#686c83] font-medium">
-                  Powerful Reports
-                </a>
-                <a href="#" className="text-[#686c83] font-medium">
-                  Blockchain
-                </a>
-                <a href="#" className="text-[#686c83] font-medium">
-                  Auto-Backup
-                </a>
-                <a href="#" className="text-[#686c83] font-medium">
-                  Data Science
-                </a>
-                <a href="#" className="text-[#686c83] font-medium">
-                  Auto-Scaling Up
-                </a>
-              </div>
+
+          <div>
+            <h4 className="font-semibold mb-4">Produk</h4>
+            <div className="flex flex-col gap-3 text-sm text-gray-400">
+              <a href="#produk">Batu Split</a>
+              <a href="#produk">Batu Screening</a>
+              <a href="#produk">Batu Boulder</a>
+              <a href="#produk">Pasir Batu</a>
             </div>
-            <div className="flex flex-col gap-[30px]">
-              <h4 className="text-white font-bold text-[18px]">Resouces</h4>
-              <div className="flex flex-col gap-4">
-                <a href="#" className="text-[#686c83] font-medium">
-                  Support 24/7
-                </a>
-                <a href="#" className="text-[#686c83] font-medium">
-                  Help Center
-                </a>
-                <a href="#" className="text-[#686c83] font-medium">
-                  How-to Instructions
-                </a>
-                <a href="#" className="text-[#686c83] font-medium">
-                  Blog & Tips
-                </a>
-                <a href="#" className="text-[#686c83] font-medium">
-                  About Us
-                </a>
-              </div>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-4">Layanan</h4>
+            <div className="flex flex-col gap-3 text-sm text-gray-400">
+              <a href="#">Konsultasi Proyek</a>
+              <a href="#">Manajemen Proyek</a>
+              <a href="#">Pengadaan Material</a>
+              <a href="#">Survey Lokasi</a>
             </div>
-            <div className="flex flex-col gap-[30px]">
-              <h4 className="text-white font-bold text-[18px]">Company</h4>
-              <div className="flex flex-col gap-4">
-                <a href="#" className="text-[#686c83] font-medium">
-                  Privacy & Policy
-                </a>
-                <a href="#" className="text-[#686c83] font-medium">
-                  Terms and Conditions
-                </a>
-                <a href="#" className="text-[#686c83] font-medium">
-                  Investor Relations
-                </a>
-                <a href="#" className="text-[#686c83] font-medium">
-                  Join With Us
-                </a>
-                <a href="#" className="text-[#686c83] font-medium">
-                  Our Statistics
-                </a>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-4">Kontak</h4>
+            <div className="flex flex-col gap-3 text-sm text-gray-400">
+              <div className="flex items-center gap-2">
+                <Phone size={16} />
+                <span>+62 812-3456-7890</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <Mail size={16} />
+                <span>info@bklquarry.com</span>
+              </div>
+
+              <div className="flex items-start gap-2">
+                <MapPin size={16} className="mt-1" />
+                <span>Bandung, Indonesia</span>
               </div>
             </div>
           </div>
         </div>
-        <p className="text-center text-[#686c83] font-medium">
-          All Rights Reserved • Copyright Weserve by BuildWithAngga 2024 in
-          Bandung
-        </p>
+
+        <div className="border-t border-white/10 mt-10 pt-6 text-center text-sm text-gray-500">
+          © {new Date().getFullYear()} BKL Quarry. All rights reserved.
+        </div>
       </div>
     </footer>
   );

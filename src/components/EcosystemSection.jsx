@@ -72,7 +72,7 @@ export default function EcosystemSection() {
           <div className="flex gap-5 items-center">
             <a
               href="#"
-              className="bg-weserve-purple rounded-full px-10 py-4 font-bold text-[18px] text-white"
+              className="bg-[#640ef1] rounded-full px-10 py-4 font-bold text-[18px] text-white"
             >
               Explore More
             </a>

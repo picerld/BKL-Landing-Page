@@ -5,6 +5,7 @@
     color: #080C2E;
     background-color: #F1F4F5;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
   }
 }
 
